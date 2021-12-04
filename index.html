@@ -1,0 +1,51 @@
+<html>
+
+<head>
+    <title>
+        Sound Recognition App
+    </title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+</head>
+
+<body> 
+    <div id="container">
+        <center>
+            <div id="header_div" class="col-xs-12">
+                <h2>
+                    Sound Controlled Aliens
+                </h2>
+                <p>
+                    Note: Play different Sounds like Clap, Snap, Hum and Tap to make the Aliens dance.
+                </p>
+            </div>
+            <div id="main_div">
+                <button onclick="listen()" type="button" class="btn btn-success">
+                    START
+                </button>
+                <h3 id="icanhear">
+                    I can Hear-
+                </h3>
+                <h4 id="accuracy">
+                    Accuracy-
+                </h4>
+                <br>
+                <img width="300" height="250" id="alien1" src="aliens01.png"> 
+                <img width="300" height="250" id="alien2" src="aliens02.png"> 
+                <img width="300" height="250" id="alien3" src="aliens03.png"> 
+                <img width="300" height="250" id="alien4" src="aliens04.png"> 
+            </div>
+            <div id="copyright_footer">
+                <h3>
+                    Devoloped by Viraj Dixit
+                </h3>
+            </div>
+        </center>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
